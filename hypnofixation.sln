@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36429.23 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hypnofixation", "hypnofixation\hypnofixation.csproj", "{226A211F-44D9-48D5-8D2F-1B5E7930695F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{226A211F-44D9-48D5-8D2F-1B5E7930695F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{226A211F-44D9-48D5-8D2F-1B5E7930695F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{226A211F-44D9-48D5-8D2F-1B5E7930695F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{226A211F-44D9-48D5-8D2F-1B5E7930695F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ABBFE8DF-B769-4EAA-ABC5-3F83A002FCE6}
+	EndGlobalSection
+EndGlobal
