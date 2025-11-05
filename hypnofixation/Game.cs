@@ -30,7 +30,7 @@ namespace MohawkGame2D
         int y = 200;
         Vector2 position;
 
-      
+      clickable_tiles tiles = new clickable_tiles ();
 
             /// <summary>
             ///     Setup runs once before the game loop begins.
@@ -116,6 +116,8 @@ namespace MohawkGame2D
             Color clicksquare = new Color("#FFDAB9");
             Draw.FillColor = clicksquare;
 
+
+            tiles.tilesupdate();
         }
 
 
