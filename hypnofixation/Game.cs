@@ -31,11 +31,13 @@ namespace MohawkGame2D
         Vector2 position;
 
       clickable_tiles tiles = new clickable_tiles ();
+        TilesUpdate tiles123 = new TilesUpdate ();
+        newwindow windowopen = new newwindow();
 
-            /// <summary>
-            ///     Setup runs once before the game loop begins.
-            /// </summary>
-            public void Setup()
+        /// <summary>
+        ///     Setup runs once before the game loop begins.
+        /// </summary>
+        public void Setup()
         {
             Window.SetTitle("hypnofixation");
             Window.SetSize(800, 600);
@@ -45,6 +47,8 @@ namespace MohawkGame2D
             {
                 radii[i] = Random.Integer(10, 50);
             }
+
+          
         }
 
         /// <summary>
@@ -116,15 +120,31 @@ namespace MohawkGame2D
             Color clicksquare = new Color("#FFDAB9");
             Draw.FillColor = clicksquare;
 
+            tiles123.tileone();
 
-            tiles.tilesupdate();
+            tiles123.tiletwo();
+
+            tiles123.tilethree();
+
+            windowopen.tilemechanics();
+            
         }
 
 
-    
+        void makenewwindow()
+        {
+            if (Input.IsMouseButtonPressed(MouseInput.Left))
+            {
+                windowopen.tilemechanics();
 
+                tiles123.tileone(); tiles123.tiletwo();
 
-     void DrawEyeball(Vector2 eyeposition, float corneaR, float irisR, float pupilR)
+                Window.ClearBackground(Color.OffWhite);
+
+            }
+        }
+
+        void DrawEyeball(Vector2 eyeposition, float corneaR, float irisR, float pupilR)
         {
             //get both X and Y coordinates as a vector
             Vector2 mouseposition = Input.GetMousePosition();
@@ -153,6 +173,8 @@ namespace MohawkGame2D
         }
 
 
+        TilesUpdate tileclicker = new TilesUpdate();
+        
 
 
 
