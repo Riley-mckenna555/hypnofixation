@@ -33,6 +33,7 @@ namespace MohawkGame2D
       clickable_tiles tiles = new clickable_tiles ();
         TilesUpdate tiles123 = new TilesUpdate ();
         newwindow windowopen = new newwindow();
+        gamemap jumpgamemap = new gamemap();
 
         /// <summary>
         ///     Setup runs once before the game loop begins.
@@ -127,6 +128,7 @@ namespace MohawkGame2D
             tiles123.tilethree();
 
             windowopen.tilemechanics();
+
             
         }
 
@@ -143,6 +145,7 @@ namespace MohawkGame2D
 
             }
         }
+
 
         void DrawEyeball(Vector2 eyeposition, float corneaR, float irisR, float pupilR)
         {
