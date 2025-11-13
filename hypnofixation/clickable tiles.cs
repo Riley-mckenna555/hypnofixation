@@ -15,6 +15,7 @@ public class clickable_tiles
 
     public class TilesUpdate
     {
+        Game lobbymap = new Game();
         //int and vector2 storage
         public int x;
         public int y;
@@ -65,24 +66,35 @@ public class clickable_tiles
 
         public void tilemechanics()
         {
-
+            Game lobbymap = new Game();
             gamemap jumpgame = new gamemap();
+            bool showmap = true;
 
             //make the window appear a different color with the code for map() in it 
-
-            if (Input.IsKeyboardKeyPressed(KeyboardInput.B))
+            bool isKeyPressed = Input.IsKeyboardKeyPressed(KeyboardInput.B);
+            if ( isKeyPressed == true)
 
             {
-                bool appeargamemap = true;
+                
+                
+                showmap = false;
+
+
+
+
+            }
+            if (showmap )
+            {
+                lobbymap.Update();
+            }
+            
+            else
+            {
                 jumpgame.map();
-                 
-
-
             }
-            else if (Input.IsKeyboardKeyPressed(KeyboardInput.B))
-            {
-                bool appeargamemap = false;
-            }
+
+           
+
 
 
 

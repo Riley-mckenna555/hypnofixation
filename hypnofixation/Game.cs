@@ -14,15 +14,10 @@ namespace MohawkGame2D
    
     public class Game
     {
+        
+       
 
-        Vector2[] positions = [
-           new Vector2 (500,100),
-            new Vector2 (50,50),
-            new Vector2 (350,300),
-            new Vector2 (75,325),
-            new Vector2 (275,40),
-            new Vector2 (225,375),
-            ];
+
         int[] radii;
         // Place your variables here:
         int r = 200;
@@ -30,7 +25,16 @@ namespace MohawkGame2D
         int y = 200;
         Vector2 position;
 
-      clickable_tiles tiles = new clickable_tiles ();
+        Vector2[] positions = [
+          new Vector2 (500,100),
+            new Vector2 (50,50),
+            new Vector2 (350,300),
+            new Vector2 (75,325),
+            new Vector2 (275,40),
+            new Vector2 (225,375),
+            ];
+
+        clickable_tiles tiles = new clickable_tiles ();
         TilesUpdate tiles123 = new TilesUpdate ();
         newwindow windowopen = new newwindow();
         gamemap jumpgamemap = new gamemap();
@@ -40,6 +44,8 @@ namespace MohawkGame2D
         /// </summary>
         public void Setup()
         {
+
+
             Window.SetTitle("hypnofixation");
             Window.SetSize(800, 600);
             radii = new int[positions.Length];
